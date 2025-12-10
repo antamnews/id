@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Winrate Slot — RTP Live</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Winrate Slot — RTP Live (Demo)</h1>
+      <div class="controls">
+        <label>Filter provider:
+          <select id="providerFilter"><option value="all">All</option></select>
+        </label>
+        <label>Auto-refresh:
+          <input type="checkbox" id="autorefresh" checked />
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div id="lastUpdated" class="meta">Last updated: —</div>
+      <table id="winrateTable">
+        <thead>
+          <tr><th>#</th><th>Game</th><th>Provider</th><th>RTP</th><th>Winrate (%)</th><th>Plays</th><th>Updated</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <footer>
+      <small>Demo — simulated data. Integrate with real provider APIs for production.</small>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
